@@ -22,7 +22,8 @@ app.use(cookieParser());
 app.use(
     cors({
         origin:"https://smartstudy-mydh.onrender.com",
-        credentials:true
+        credentials:true,
+        methods: ["POST", "GET"]
     })
 )
 app.use(
